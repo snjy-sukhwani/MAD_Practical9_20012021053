@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--Permissions for Sending,Reading,Receiving SMS(s)-->
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
@@ -27,6 +28,8 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+        <!--Receiver-->
         <receiver
             android:name=".SMSBroadcastReceiver"
             android:enabled="true"
